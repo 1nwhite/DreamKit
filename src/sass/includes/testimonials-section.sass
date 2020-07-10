@@ -1,0 +1,64 @@
+// testimonials styles
+
+.testimonials
+    &-slider
+        margin-bottom: 200px
+    &-slide
+        border: 1px solid $primary-color
+        border-radius: 40px
+        width: 90%
+        margin: auto
+        &_author
+            &-img
+                margin: 0 auto
+                margin-top: 45px
+                margin-bottom: 18px
+            &-name
+                font-family: "TTNorms"
+                font-size: 14px
+                text-transform: uppercase
+                letter-spacing: 5px
+        &-votes
+            li
+                margin-right: 5px
+        &_review
+            width: 85%
+            margin: auto
+            margin-bottom: 40px
+
+.testimonials-slick-prev,
+.testimonials-slick-next
+    width: 71px
+    height: 69px
+    border: 1px solid $primary-color
+    border-radius: 12px
+    top: 100%
+    bottom: 0
+    transform: translateY(60%)
+    &::after
+        content: ''
+        display: block
+        position: absolute
+        width: 25px
+        height: 25px
+        border-bottom: 3px solid $primary-color
+        left: 50%
+        top: 50%
+.testimonials-slick-prev
+    left: 39%
+    &::after
+        border-left: 3px solid $primary-color
+        transform: translate(-30%, -50%) rotate(45deg)
+.testimonials-slick-next
+    right: 39%
+    &::after
+        border-right: 3px solid $primary-color
+        transform: translate(-60%, -50%) rotate(-45deg)
+
+.slick
+    &-slide
+        margin: 0 5px
+    &-list
+        margin: 0 -5px
+    
+

@@ -1,0 +1,56 @@
+// footer styles
+
+.footer
+    background-color: #2e2e2e
+    &-block
+        margin-top: 5rem
+        padding-bottom: 2rem
+    &-block:not(:last-child)
+        border-right: 1px solid #8a8a8a80
+    h5
+        color: #ffffff
+        text-transform: uppercase
+        font-family: "TTNorms"
+        font-size: 15px
+        letter-spacing: 1px
+        margin-bottom: 2rem
+    p,
+    a
+        color: #bfbfbfd4
+        font-size: 14px
+        display: block
+    &-social
+        width: 90%
+        li
+            margin-top: 3rem
+            img
+                width: 20px
+    &-navigation,
+    &-posts
+        li
+            margin-bottom: 10px
+            a
+                position: relative
+                padding-bottom: 10px
+                padding-left: 25px
+                width: 95%
+                border-bottom: 1px solid #8a8a8a80
+                &::before
+                    content: ''
+                    position: absolute
+                    left: 5px
+                    top: 25%
+                    transform: rotate(-45deg)
+                    width: 6px
+                    height: 6px
+                    border-bottom: 1px solid #bfbfbfd4
+                    border-right: 1px solid #bfbfbfd4
+    &-copy
+        background-color: #171717
+        padding: 1rem 0
+        small
+            text-transform: uppercase
+            font-family: "TTNorms"
+            color: #bfbfbfd4
+            letter-spacing: 2px
+

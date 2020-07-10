@@ -1,0 +1,56 @@
+// main styles
+
+.main
+    margin-top: 250px
+    height: 70vh
+    &_header
+        font-size: 75px
+        font-weight: 800
+        font-family: 'DaxlineBlack'
+        color: $primary-color
+        margin-bottom: 0
+        span
+            color: $secondary-color
+    &_desc
+        font-size: 28px
+        margin-bottom: 80px
+    &-form
+        input
+            width: 340px
+            margin-bottom: 45px
+            display: block
+            border: none
+            border-bottom: 1px solid $primary-color
+            padding-bottom: .5rem
+            font-size: 14px
+            transition: all ease .3s
+            &::placeholder
+                text-transform: uppercase
+                font-family: 'TTNorms'
+                color: rgba(50, 17, 57, 0.5)
+            &:focus
+                outline: none
+                border-color: darken($secondary-color, 8%)
+        &_btn
+            width: 182px
+            height: 68px
+            border: 1px solid $primary-color
+            border-radius: 12px
+            text-transform: uppercase
+            color: $primary-color
+            font-size: 14px
+            background-color: #fff
+            transition: all ease .3s
+            &:hover
+                box-shadow: 0px 14px 44px rgba(255, 126, 54, 0.15)
+    &-img
+        position: relative
+        img
+            position: absolute
+            top: 0
+            right: 0
+        &_ellipse
+            transform: translate(0%, -15%)
+        &_frame
+            transform: translate(-25%, 10%)
+        
